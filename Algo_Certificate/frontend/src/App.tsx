@@ -120,21 +120,26 @@ function WalletConnect() {
     }
   }
 
+  const optInForNFT = async () => {
+    try {
+      // Assuming you have a method named `optIn` on your smart contract
+      // that takes a public key as an argument
+      const txId = await myContract.methods.optIn(address).send()
+      console.log(`Transaction ID: ${txId}`)
+    } catch (error) {
+      console.error('Error opting in for NFT:', error)
+    }
+  }
+
   return (
     <div>
       {connected ? (
         <>
           Connected to address: {address}
-          <button
-            onClick={() => {
-              /* Call your opt-in function here */
-            }}
-          >
-            Opt-in for NFT
-          </button>
+          <button onClick={optInForNFT}>Opt-in for NFT</button>
         </>
       ) : (
-        <button onClick={handleConnect}>Connect a Wallet</button>
+        <button onClick={handleConnect}>Connect Wallet</button>
       )}
     </div>
   )
