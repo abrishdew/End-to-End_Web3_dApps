@@ -146,3 +146,27 @@ function WalletConnect() {
 }
 
 export default WalletConnect
+
+const [nftName, setNftName] = useState('')
+const [nftDescription, setNftDescription] = useState('')
+
+const handleSubmit = (event) => {
+  event.preventDefault()
+  // TODO: Call the API to create the NFT
+}
+
+return (
+  <div>
+    <form onSubmit={handleSubmit}>
+      <label>
+        Name:
+        <input type="text" value={nftName} onChange={(e) => setNftName(e.target.value)} />
+      </label>
+      <label>
+        Description:
+        <input type="text" value={nftDescription} onChange={(e) => setNftDescription(e.target.value)} />
+      </label>
+      <input type="submit" value="Create NFT" />
+    </form>
+  </div>
+)
