@@ -1,0 +1,13 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 0.6.0
+_src_path: gh:algorandfoundation/algokit-fullstack-template
+author_email: dewtesfaye76@gmail.com
+author_name: Abreham
+contract_name: algo_cert
+deployment_language: python
+ide_vscode: true
+preset_name: starter
+project_name: Algo_Certificate
+use_python_black: true
+use_python_pytest: true
+
