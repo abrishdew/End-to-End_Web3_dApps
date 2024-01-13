@@ -134,7 +134,7 @@ function WalletConnect() {
           </button>
         </>
       ) : (
-        <button onClick={handleConnect}>Connect Wallet</button>
+        <button onClick={handleConnect}>Connect a Wallet</button>
       )}
     </div>
   )
