@@ -11,7 +11,7 @@ const pinFileToIPFS = async () => {
     formData.append('file', file)
 
     const pinataMetadata = JSON.stringify({
-      name: 'File name',
+      name: 'Certificate_of_comp',
     });
     formData.append('pinataMetadata', pinataMetadata);
 

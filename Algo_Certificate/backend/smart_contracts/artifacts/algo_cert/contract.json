@@ -12,6 +12,13 @@
             "returns": {
                 "type": "string"
             }
+        },
+        {
+            "name": "opt_in",
+            "args": [],
+            "returns": {
+                "type": "void"
+            }
         }
     ],
     "networks": {}
